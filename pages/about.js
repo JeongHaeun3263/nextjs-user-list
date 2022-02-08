@@ -1,22 +1,18 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
-import styles from '../styles/Home.module.css';
 
-import Link from 'next/link';
 import { Fragment } from 'react/cjs/react.production.min';
 
-export default function Home() {
+const About = () => {
 	return (
 		<Fragment>
 			<Head>
-				<title>Nextjs | Home</title>
+				<title>Nextjs | About</title>
 				<meta name='keywords' content='nextjs basic' />
 			</Head>
+
 			<div>
-				<h1 className={styles.title}>Homepage</h1>
-				<p className={styles.text}>
+				<h1>About</h1>
+				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et
 					sollicitudin ipsum. Nunc porttitor nulla id est elementum, vitae porta
 					nulla cursus. Fusce a congue neque. Quisque pulvinar odio sit amet
@@ -27,7 +23,7 @@ export default function Home() {
 					ultrices efficitur lectus in sagittis. Duis efficitur ut lectus id
 					semper.
 				</p>
-				<p className={styles.text}>
+				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et
 					sollicitudin ipsum. Nunc porttitor nulla id est elementum, vitae porta
 					nulla cursus. Fusce a congue neque. Quisque pulvinar odio sit amet
@@ -38,10 +34,9 @@ export default function Home() {
 					ultrices efficitur lectus in sagittis. Duis efficitur ut lectus id
 					semper.
 				</p>
-				<Link href='/ninjas'>
-					<a className={styles.btn}>See more Ninjas</a>
-				</Link>
 			</div>
 		</Fragment>
 	);
-}
+};
+
+export default About;
